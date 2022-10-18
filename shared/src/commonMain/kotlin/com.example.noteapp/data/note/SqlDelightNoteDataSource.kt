@@ -22,7 +22,7 @@ class SqlDelightNoteDataSource(db: NoteDatabase) : NoteDataSource{
         )
     }
 
-    override suspend fun getNoteByID(id: Long): Note? {
+    override suspend fun getNoteById(id: Long): Note? {
         return queries.getNoteById(id)
             .executeAsOneOrNull()?.toNote()
     }

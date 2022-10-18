@@ -9,5 +9,5 @@ import com.example.noteapp.domain.note.Note
 data class NoteListState(
     val notes: List<Note> = emptyList(),
     val searchText: String = "",
-    val isSearchActive: Boolean
+    val isSearchActive: Boolean = false
 )
